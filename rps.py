@@ -1,4 +1,5 @@
 import random
+
 rock = '''
     _______
 ---'   ____)
@@ -36,7 +37,7 @@ if user_choice == "rock":
         print(f"Bot chose: \n {bot_choice}\n It's a draw!")
     elif bot_choice == paper:
         print(f"Bot chose: \n {bot_choice}\n You lost!")
-    if bot_choice == scissors:
+    else:
         print(f"Bot chose: \n {bot_choice}\n You won!")
 elif user_choice == paper:
     print(paper)
@@ -44,7 +45,7 @@ elif user_choice == paper:
         print(f"Bot chose: \n {bot_choice}\n You won!")
     elif bot_choice == paper:
         print(f"Bot chose: \n {bot_choice}\n It's a draw!")
-    if bot_choice == scissors:
+    else:
         print(f"Bot chose: \n {bot_choice}\n You lost!")
 elif user_choice == scissors:
     print(scissors)
@@ -52,5 +53,7 @@ elif user_choice == scissors:
         print(f"Bot chose: \n {bot_choice}\n You lost!!")
     elif bot_choice == paper:
         print(f"Bot chose: \n {bot_choice}\n You won!")
-    if bot_choice == scissors:
+    else:
         print(f"Bot chose: \n {bot_choice}\n It's a draw!")
+else:
+    print("Invalid option.")
